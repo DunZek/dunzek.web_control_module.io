@@ -1,5 +1,5 @@
 # Web Control Module
-> A website for commmunicating with Arduino-based BLE devices
+> A website for communicating with Arduino-based BLE devices
 
 > Inspiration: this project was conceived around 2020. It was only recently started at the end of March 2022. I wanted to control my Arduino devices.
 
