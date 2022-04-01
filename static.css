@@ -1,0 +1,27 @@
+/* These are default, styles that are applied unconditionally */
+
+*, html, body {
+    /* CHILDREN */
+    margin: 0px; padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    /* PARENT */
+    width: 100%; height: 100%;
+}
+
+h1 {
+    /* PARENT */
+    margin: 1rem 1rem 0.5rem 1rem;
+}
+
+p {
+    /* PARENT */
+    margin: 0rem 1rem 1rem 1rem;
+}
+
+h1, p {
+    /* STYLE */
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,13 @@
+/* These are styles that apply based on certain conditions */
+
+.unknown {
+    color: gray;
+}
+
+.available {
+    color: chartreuse
+}
+
+.unavailable {
+    color: crimson;
+}
