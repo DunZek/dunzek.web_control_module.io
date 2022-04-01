@@ -1,7 +1,5 @@
 import * as set_style from './style.js';
 
-const STATUS = document.querySelector('p span');
-
 // 1. Check availability
 navigator.bluetooth.getAvailability().then(available => {
     if (available) {
@@ -15,3 +13,17 @@ navigator.bluetooth.getAvailability().then(available => {
 });
 
 // 2. Request bluetooth devices
+const OPTIONS = {
+    filters: [],
+    optionalServices: [],
+    acceptAllDevices: false,
+};
+navigator.bluetooth.requestDevice(/* OPTIONS */).then(device => {
+    // FIXME: Failed to Execute 'requestDevice' on 'Bluetooth': Must be
+    // handling a user gesture to show a permission request.
+    set_style.setName(device.name);
+    set_style.setId(device.id);
+    set_style.setGatt(device.gatt);
+}).catch(error => {
+    console.error("Error: " + error);
+});

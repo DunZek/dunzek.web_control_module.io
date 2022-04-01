@@ -10,8 +10,18 @@
     <link rel="stylesheet" href="./dynamic.css">
 </head>
 <body>
-    <h1>Web Control Module</h1>
-    <p>Status: <span class="unknown">...</span></p>
+    <header>
+        <h1>Web Control Module</h1>
+        <p>Status: <span id="status" class="unknown">...</span></p>
+    </header>
+    <main>
+        <article>
+            <p>Bluetooth device: <span id="device_name">...</span></p>
+            <p>Bluetooth ID: <span id="device_id">...</span></p>
+            <p>Bluetooth GATT: <span id="device_gatt">...</span></p>
+        </article>
+    </main>
+    
     <script src="./script.js" type="module"></script>
 </body>
 </html>
